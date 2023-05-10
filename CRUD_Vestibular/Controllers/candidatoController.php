@@ -54,6 +54,24 @@ function ConsultarCandidatos()
     }
 }
 
+function RemoverCandidato($id)
+{
+    if( isset($id) )
+    {
+        $sql = "delete from candidatos where id =" . $id;
+        $db = new dbUtils();
+        
+        if($db->DbCommandExec($sql) > 0)
+        {
+            return "OK";
+        }
+        else
+        {
+            return "ID inválido!";
+        }
+    }    
+}
+
 function AtualizarCandidato($candidato, $id)
 {
     $sql = "update candidatos set 

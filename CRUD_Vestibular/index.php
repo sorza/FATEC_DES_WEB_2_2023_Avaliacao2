@@ -21,6 +21,25 @@
             </div><?php
         }
     }
+    else
+    {
+        $retorno = RemoverCandidato($_GET);
+        
+        if($retorno !== "OK")
+        {     
+            ?><div class="alert alert-danger" role="alert">
+                <?php echo $retorno; ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">x</button>
+            </div><?php
+        }
+        else
+        {
+            ?><div class="alert alert-success" role="alert">
+                Usuário removido com sucesso!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">x</button>
+            </div><?php
+        }
+    }
    
 ?>
 
@@ -107,6 +126,23 @@
                 </div>
             </form>
         </div>           
+
+        <br><br>
+
+        <div>
+            <form action="index.php" method="get">
+
+                <h2>Remover Candidato</h2>
+                <div class="form-group">
+                    <label>Informe o ID do candidato</label>
+                    <input type="number" name="id" class="form-control" value="">
+                    <span class="help-block"></span>                    
+                </div>                    
+                <div class="form-group">
+                    <input type="submit" class="btn btn-danger" value="Remover">
+                </div>
+            </form>
+        </div>          
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
