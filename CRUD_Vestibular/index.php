@@ -23,7 +23,7 @@
     }
     else
     {
-        $retorno = RemoverCandidato($_GET);
+        $retorno = RemoverCandidato($_GET['id']);
         
         if($retorno !== "OK")
         {     
