@@ -59,7 +59,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         <form action="cadastro.php" method="post">
             <div class="form-group">
                 <label>Nome do candidato</label>
-                <input type="text" name="nome" class="form-control" value="">
+                <input type="text" maxlength="50" name="nome" class="form-control" value="">
                 <span class="help-block"></span>
             </div>    
             <div class="form-group">
@@ -69,7 +69,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
             </div>    
             <div class="form-group">
                 <label>Telefone</label>
-                <input type="text" name="telefone" maxlength="15" class="form-control">
+                <input type="text" name="telefone" maxlength="11" class="form-control">
                 <span class="help-block"></span>
             </div>          
 

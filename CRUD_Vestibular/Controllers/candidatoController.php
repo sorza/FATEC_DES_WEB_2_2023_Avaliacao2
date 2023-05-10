@@ -54,4 +54,26 @@ function ConsultarCandidatos()
     }
 }
 
+function AtualizarCandidato($candidato, $id)
+{
+    $sql = "update candidatos set 
+                nome = '" . $candidato->getNome() ."',
+                rg = '" . $candidato->getRG() ."',
+                telefone = '". $candidato->getTelefone() ."',
+                ensino_publico = " . $candidato->getEnsinoPublico() ."
+            where id = " . $id . ";";
+
+    $db = new dbUtils();
+
+    if($db->DbCommandExec($sql) > 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    
+}
+
 
