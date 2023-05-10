@@ -1,12 +1,16 @@
 # FATEC_DES_WEB_2_2023_Avaliacao2
 
-Projeto CRUD utilizando PDO para um contexto de Vestibular
+Projeto CRUD utilizando PDO
+Contexto: Vestibular
 Faculdade de Tecnologia de Araras
 2º Semestre
 Disciplia: Desenvolvimento WEB II
 
 Linguagem utilizada: PHP
 SGBD mySQL
+
+Funcionalidades limitadas devido ao tempo para trabalho
+Prazo: 10/05 até 00:15
 
 
 ----------- BASE DE DADOS -----------------
