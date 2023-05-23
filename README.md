@@ -4,13 +4,13 @@ Projeto CRUD utilizando PDO
 Contexto: Vestibular
 Faculdade de Tecnologia de Araras
 2º Semestre
-Disciplia: Desenvolvimento WEB II
+Disciplina: Desenvolvimento WEB II
 
 Linguagem utilizada: PHP
-SGBD mySQL
+SGBD MySQL
+Conexão PDO
 
 Funcionalidades limitadas devido ao tempo para trabalho
-Prazo: 10/05 até 00:15
 
 
 ----------- BASE DE DADOS -----------------
