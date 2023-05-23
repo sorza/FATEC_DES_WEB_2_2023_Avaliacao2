@@ -22,22 +22,26 @@
         }
     }
     else
-    {
-        $retorno = RemoverCandidato($_GET['id']);
-        
-        if($retorno !== "OK")
-        {     
-            ?><div class="alert alert-danger" role="alert">
-                <?php echo $retorno; ?>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">x</button>
-            </div><?php
-        }
-        else
+    {      
+       
+        if(isset($_GET['id']))
         {
-            ?><div class="alert alert-success" role="alert">
-                Usuário removido com sucesso!
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">x</button>
-            </div><?php
+            $retorno = RemoverCandidato($_GET['id']); 
+
+            if($retorno !== "OK")
+            {     
+                ?><div class="alert alert-danger" role="alert">
+                    <?php echo $retorno; ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">x</button>
+                </div><?php
+            }
+            else
+            {
+                ?><div class="alert alert-success" role="alert">
+                    Usuário removido com sucesso!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">x</button>
+                </div><?php
+            }
         }
     }
    
